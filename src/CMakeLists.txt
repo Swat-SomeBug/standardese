@@ -49,6 +49,7 @@ set(comment_src
     comment/doc_comment.cpp
     comment/parser.cpp)
 set(markup_src
+    markup/asciidoc.cpp
     markup/block.cpp
     markup/code_block.cpp
     markup/doc_section.cpp

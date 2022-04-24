@@ -78,6 +78,18 @@ namespace markup
     {
         return render(xml_generator(), e);
     }
+
+    /// An AsciiDoc generator
+    /// \returns A generator that will generate in AsciiDoc format
+    generator asciidoc_generator(const std::string& extension) noexcept;
+
+    /// Renders an entity as AsciiDoc
+    /// \returns `render(asciidoc_generator(), e)`.
+    inline std::string as_asciidoc(const entity& e)
+    {
+      return render(asciidoc_generator("adoc"), e);
+    }
+
 } // namespace markup
 } // namespace standardese
 
